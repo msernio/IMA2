@@ -1,4 +1,4 @@
-const video = document.querySelector("#custom-video-player");
+const video = document.querySelector("#custom-audio-player");
 const playPauseBtn = document.querySelector("#play-pause-btn");
 const playPauseImg = document.querySelector("#play-pause-img");
 const progressBar = document.querySelector("#progress-bar-fill");
