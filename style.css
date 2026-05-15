@@ -1,5 +1,5 @@
 :root {
-  --primary-bg-color: #f5efe8;
+  --primary-bg-color: #7a9e8e;
   --text-color: #2d2d2d;
   --main-bg-color: #7a9e8e;
   --main-text-color: #f5efe8;
@@ -29,9 +29,12 @@ body {
 
 /* Create a container for the main content */
 .container {
-  max-width: 1000px;
+  background-color: var(--main-text-color);
+  max-width: 1400px;
   width: 100%;
+  max-height: 1000%;
   padding: 10px;
+  border-radius: 30px 30px 30px 30px;
 }
 
 /* Header styling */
@@ -42,17 +45,28 @@ header {
   padding: 10px 0;
   text-align: center;
   width: 100%;
-  border-radius: 0 0 30px 30px;
 }
 
 /* Navigation styling */
 nav {
-    margin-top: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    padding: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #a2d6bf;  
+  border-radius: 40px;
+  width: fit-content;
+  margin: 20px auto;
+}
+
+.theme-btn {
+  background-color: var(--main-btn-bg-color);
+  color: var(--main-text-color);
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
 }
 
 .album-cover {
@@ -82,6 +96,7 @@ nav {
   gap: 1rem;
   margin-top: 10px;
   width: 100%;
+  flex-direction: column;
 }
 
 .custom-controls button {
@@ -96,7 +111,7 @@ nav {
 }
 
 .progress-bar {
-  width: 100%;
+  width: 50%;
   height: 10px;
 
   background-color: #ddd;
