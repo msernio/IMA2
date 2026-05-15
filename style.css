@@ -32,7 +32,6 @@ body {
   background-color: var(--main-text-color);
   max-width: 1400px;
   width: 100%;
-  max-height: 1000%;
   padding: 10px;
   border-radius: 30px 30px 30px 30px;
 }
@@ -70,8 +69,8 @@ nav {
 }
 
 .album-cover {
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    height: 350px;
     object-fit: cover;
     border-radius: 12px;
     display: block;
@@ -80,14 +79,38 @@ nav {
 
 /* Media player styling */
 .media-player {
-  width: 100%;
-  margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    width: 100%;
 }
 
-.media-player video {
-  max-width: 100%;
-  border-radius: 10px 10px 10px 10px;
+.player-left {
+    flex-shrink: 0;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+
 }
+
+.player-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+#theme-title {
+    font-size: 3rem;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+
 
 .custom-controls {
   display: flex;
@@ -111,13 +134,13 @@ nav {
 }
 
 .progress-bar {
-  width: 50%;
+  width: 80%;
   height: 10px;
-
   background-color: #ddd;
   margin-top: 10px;
   overflow: hidden;
   border-radius: 30px 30px 30px 30px;
+  margin-bottom: 10px;
 
 }
 
