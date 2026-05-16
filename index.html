@@ -9,70 +9,60 @@
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="style.css">
 	<script src="script.js" defer=""></script>
-  <style type="text/css" media="print">
-        @media print {
-            .no-print {
-                display: none !important;
-            }
-        }
-    </style></head>
-  <body>
-    <!-- Header Section -->
-    <header>
-      <h1>Serenity</h1>
-    </header>
 
+	<body>
+		<!-- Header Section -->
+		<header>
+		<h1>Serenity</h1>
+		</header>
 
-    <!-- Main Content Section-->
-    <main class="container">
-		   <!-- Navigation Section -->
-	<nav>
-		<button class="theme-btn" id="theme-forest">Forest</button>
-		<button class="theme-btn" id="theme-Ocean">Ocean</button>
-		<button class="theme-btn" id="theme-Night">Night</button>
-		<button class="theme-btn" id="theme-Rain">Rain</button>
-	</nav>
-      <!-- Media Player Section -->
-	   <audio id="custom-audio-player">
-			<source src="" type="audio/mp3">
-		</audio>
+		<!-- Main Content Section-->
+		<main class="container">
+		<!-- Media Player Section -->
+			<audio id="custom-audio-player">
+				<source src="" type="audio/mp3">
+			</audio>
 
-		<div class="media-player">
-			<div class="player-left">
-				<img src="" alt="Select Theme" class="album-cover">
-				<p class="album-caption"></p>
-			</div>
-			<div class="player-right">
-				<h2 id="theme-title">Select a theme</h2>
-				<div class="custom-controls">
-					<div class="progress-bar">
-						<span id="progress-bar-fill" style="width: 0%;"></span>
-					</div>
-					<div class="controls-bar">
-						<button id="mute-btn" onclick="toggleAudio()">
-								<img id="mute-unmute-img" src="mute.png" alt="Mute" width="24" height="24">
-							</button>
-						<button id="skip-back-btn">15
-							<img src="Rewind.png" alt="Skip Back" width="24" height="24">						
-						</button>	
-						<button id="play-pause-btn" onclick="togglePlayPause()">
-							<img id="play-pause-img" src="Play.png" alt="Play Button" width="24" height="24">
-						</button>
-						<button id="skip-forward-btn">
-							<img src="Forward.png" alt="Skip Forward" width="24" height="24">15						
-						</button>
-						<button id="loop-btn">
-							<img src="Loop.png" alt="Loop" width="24" height="24">
-						</button>
+			<div class="media-player">
+				<div class="player-left">
+					<img src="" alt="Select Theme" class="album-cover">
+					<p class="album-caption">No Theme Selected</p>
 				</div>
-			</div>
-      </div>
-      </section>
-    </main>
+				<div class="player-right">
+						<nav>
+							<button class="theme-btn" id="theme-forest">Forest</button>
+							<button class="theme-btn" id="theme-Ocean">Ocean</button>
+							<button class="theme-btn" id="theme-Night">Night</button>
+							<button class="theme-btn" id="theme-Rain">Rain</button>
+						</nav>
+					<h2 id="theme-title">Select a theme</h2>
+					<div class="custom-controls">
+						<div class="progress-bar">
+							<span id="progress-bar-fill" style="width: 0%;"></span>
+						</div>
+						<div class="controls-bar">
+							<button id="mute-btn" onclick="toggleAudio()">
+									<img id="mute-unmute-img" src="mute.png" alt="Mute" width="24" height="24">
+								</button>
+							<button id="skip-back-btn">15
+								<img src="Rewind.png" alt="Skip Back" width="24" height="24">						
+							</button>	
+							<button id="play-pause-btn" onclick="togglePlayPause()">
+								<img id="play-pause-img" src="Play.png" alt="Play Button" width="24" height="24">
+							</button>
+							<button id="skip-forward-btn">
+								<img src="Forward.png" alt="Skip Forward" width="24" height="24">15						
+							</button>
+							<button id="loop-btn">
+								<img src="Loop.png" alt="Loop" width="24" height="24">
+							</button>
+					</div>
+				</div>
+		</div>
+		</main>
 
-    <!-- Footer Section -->
-    <footer>
-		<p1> Music for relaxation</p1>
-    </footer>
-  
-
+		<!-- Footer Section -->
+		<footer>
+			<p> Ambiance for relaxation</p>
+		</footer>
+	</body>
