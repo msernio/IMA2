@@ -1,5 +1,4 @@
 const video = document.querySelector("#custom-audio-player");
-const playPauseBtn = document.querySelector("#play-pause-btn");
 const playPauseImg = document.querySelector("#play-pause-img");
 const progressBar = document.querySelector("#progress-bar-fill");
 const themeTitle = document.querySelector("#theme-title");
@@ -8,7 +7,6 @@ const albumcaption = document.querySelector(".album-caption");
 const muteUnmuteImg = document.querySelector("#mute-unmute-img");
 video.removeAttribute("controls");
 
-// playPauseBtn.addEventListener("click", togglePlayPause);
 video.addEventListener("timeupdate", updateProgressBar);
 function togglePlayPause() {
   if (video.paused || video.ended) {
