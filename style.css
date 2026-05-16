@@ -38,12 +38,14 @@ body {
 
 /* Header styling */
 header {
-  background-color: var(--main-bg-color);
-  color: var(--main-text-color);
+  background-color: var(--main-text-color);
+  color: var(--main-bg-color);
   font-size: 30px;
   padding: 10px 0;
   text-align: center;
   width: 100%;
+  margin-top: 20px;
+  border-radius: 0 0 30px 30px;
 }
 
 /* Navigation styling */
@@ -120,7 +122,23 @@ nav {
   margin-top: 10px;
   width: 100%;
   flex-direction: column;
+
 }
+
+.controls-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 10px;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--main-bg-color);  
+  border-radius: 40px;
+  width: fit-content;
+  margin: 20px auto;
+}
+
 
 .custom-controls button {
   background-color: var(--main-btn-bg-color);
