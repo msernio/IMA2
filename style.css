@@ -4,6 +4,7 @@
   --main-bg-color: #7a9e8e;
   --main-text-color: #f5efe8;
   --main-btn-bg-color: #7a9e8e;
+  --nav-bg-color: #a2d6bf;
 }
 
 body,
@@ -44,7 +45,6 @@ header {
   padding: 10px 0;
   text-align: center;
   width: 100%;
-  margin-top: 20px;
   border-radius: 0 0 30px 30px;
 }
 
@@ -55,14 +55,14 @@ nav {
   justify-content: center;
   gap: 1rem;
   padding: 0.75rem 1.5rem;
-  background-color: #a2d6bf;  
+  background-color: var(--nav-bg-color);  
   border-radius: 40px;
   width: fit-content;
   margin: 20px auto;
 }
 
 .theme-btn {
-  background-color: var(--main-btn-bg-color);
+  background-color:var(--main-bg-color);
   color: var(--main-text-color);
   padding: 0.5rem 1.5rem;
   border-radius: 20px;
@@ -77,6 +77,15 @@ nav {
     border-radius: 12px;
     display: block;
     margin: 0 auto;
+    border: 5px solid var(--main-bg-color);
+}
+
+.album-caption {
+    text-align: center;
+    color: var(--main-bg-color);
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    font-style: italic;
 }
 
 /* Media player styling */
@@ -110,6 +119,7 @@ nav {
     text-align: center;
     align-self: center;
     margin-bottom: 30px;
+    color: var(--main-bg-color);
 }
 
 
@@ -132,8 +142,8 @@ nav {
   align-items: center;
   gap: 1rem;
   margin-top: 10px;
-  padding: 0.75rem 1.5rem;
-  background-color: var(--main-bg-color);  
+  padding: 0.1rem 1.5rem;
+  background-color: var(--nav-bg-color);  
   border-radius: 40px;
   width: fit-content;
   margin: 20px auto;
@@ -141,15 +151,17 @@ nav {
 
 
 .custom-controls button {
-  background-color: var(--main-btn-bg-color);
-  color: var(--main-text-color);
+  background-color: var(--nav-bg-color);  
+  color:azure;
   border: none;
   padding: 8px 12px;
   cursor: pointer;
   font-size: 16px;
   display: flex;
   align-items: center;
+  font-size: 8px;
 }
+
 
 .progress-bar {
   width: 80%;
@@ -172,9 +184,10 @@ nav {
 
 /* Footer styling */
 footer {
-  background-color: var(--main-bg-color);
-  color: var(--main-text-color);
+  color: var(--main-bg-color);
   text-align: center;
-  padding: 10px 0;
+  padding: 20px 0;
   width: 100%;
+  background-color: var(--main-text-color);
+  border-radius: 30px 30px 0 0;
 }

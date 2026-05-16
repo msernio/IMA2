@@ -34,12 +34,13 @@
 	</nav>
       <!-- Media Player Section -->
 	   <audio id="custom-audio-player">
-			<source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/erokia_ambient-wave-56-msfxp7-78.mp3" type="audio/mp3">
+			<source src="" type="audio/mp3">
 		</audio>
 
 		<div class="media-player">
 			<div class="player-left">
-				<img src="Image1.jpeg" alt="Image1.jpeg" class="album-cover">
+				<img src="" alt="Select Theme" class="album-cover">
+				<p class="album-caption"></p>
 			</div>
 			<div class="player-right">
 				<h2 id="theme-title">Select a theme</h2>
@@ -48,6 +49,9 @@
 						<span id="progress-bar-fill" style="width: 0%;"></span>
 					</div>
 					<div class="controls-bar">
+						<button id="mute-btn" onclick="toggleAudio()">
+								<img id="mute-unmute-img" src="mute.png" alt="Mute" width="24" height="24">
+							</button>
 						<button id="skip-back-btn">15
 							<img src="Rewind.png" alt="Skip Back" width="24" height="24">						
 						</button>	
@@ -57,6 +61,9 @@
 						<button id="skip-forward-btn">
 							<img src="Forward.png" alt="Skip Forward" width="24" height="24">15						
 						</button>
+						<button id="loop-btn">
+							<img src="Loop.png" alt="Loop" width="24" height="24">
+						</button>
 				</div>
 			</div>
       </div>
@@ -65,11 +72,7 @@
 
     <!-- Footer Section -->
     <footer>
-      <p>© d.</p>
-      <a href="https://icons8.com/icon/59862/play">Play</a> icon by
-      <a href="https://icons8.com/">Icons8</a>
-      <a href="https://icons8.com/icon/61012/pause">Pause</a> icon by
-      <a href="https://icons8.com/">Icons8</a>
+		<p1> Music for relaxation</p1>
     </footer>
   
 
