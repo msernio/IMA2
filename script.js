@@ -1,3 +1,6 @@
+// This JS script controls all interactivity for the Serenity media player.
+// It handles the audio playback, theme switching, colour changes and player controls.
+
 const video = document.querySelector("#custom-audio-player");
 const playPauseImg = document.querySelector("#play-pause-img");
 const progressBar = document.querySelector("#progress-bar-fill");
@@ -8,6 +11,7 @@ const muteUnmuteImg = document.querySelector("#mute-unmute-img");
 video.removeAttribute("controls");
 
 video.addEventListener("timeupdate", updateProgressBar);
+// Toggles the audio between playing and paused, and swaps the button icon accordingly.
 function togglePlayPause() {
   if (video.paused || video.ended) {
     video.play();
@@ -22,6 +26,7 @@ function updateProgressBar() {
   progressBar.style.width = value + "%";
 }
 
+// Mutes and unmutes the audio, swapping the icon to give the user visual feedback.
 function toggleAudio() {
   if (video.muted) {
     video.muted = false;
@@ -31,6 +36,12 @@ function toggleAudio() {
     muteUnmuteImg.src = "Unmute.png";
   }
 }
+
+// Each theme button listener updates the audio source, album art, title text and 
+// CSS variables simultaneously. I did this to help create a full visual and audio mood change.
+// This is what I chose as my additional feature because it directly serves the relaxation 
+// context by letting users personalise their environment for their own form of relaxation or
+// desired ambiance.
 
 document.querySelector("#theme-forest").addEventListener("click", function() {
     themeTitle.textContent = "Forest";
@@ -84,7 +95,9 @@ document.querySelector("#theme-Ocean").addEventListener("click", function() {
     document.documentElement.style.setProperty('--nav-bg-color', '#7bbfd4');
 });
 
-
+// This is the skip back and forward by 15 seconds functions which directly adjusts the audio 
+// currentTime property. It could be useful for study sessions where the user may want to revisit a section. 
+// Also added a loop function on the player which enables the user to repeat the track being played.
 document.querySelector("#skip-back-btn").addEventListener("click", function() {
   video.currentTime = video.currentTime - 15;
 });

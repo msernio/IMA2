@@ -1,5 +1,9 @@
-/*  */
+/* The overall aesthetic of my site was intedned to reflecting a calming, soft and simple design. With the context of 
+Music for Relaxation, I wanted to create a range of aesthetic themes which alter the colours of the site to reflect 
+the chosen theme. I used CSS as it enabled me to dive deeper with styling and made creating the style significantly easier. */
 
+/* Building on Rohits code, I decided to keep, alter, and add these colour variables to help ensure visual consistancy acorss 
+the site and simplicity in coding it  */
 :root {
   --primary-bg-color: #7a9e8e;
   --text-color: #2d2d2d;
@@ -45,6 +49,12 @@ header {
 }
 
 /* Navigation styling */
+
+/* The nav uses a pill shape and two-tone colour, and a lighter background with darker buttons.
+  This is to create visual depth and make the mood options feel like distinct, tappable choices. 
+  I also used the hover function to help achieve this, increasing brightness of the button 
+  being hovered on, as seen in 'theme-btn:hover; */
+
 nav {
   text-align: center;
   display: flex;
@@ -97,6 +107,9 @@ nav {
 
 .theme-btn:hover {
     filter: brightness(1.2);
+    /* I've scattered them throughout, however to achieve a smoother colour transition between themes,
+    transitions were added to reinforce the relaxation context as abrupt changes would feel jarring, 
+    so I thought a gradual fade better suits the calm aesthetic. */
     transition: filter 0.2s ease;
 }
 
@@ -134,6 +147,9 @@ nav {
   width: 100%;
   flex-direction: column;
 }
+
+/* I made it so the controls bar intentionally mirrors the nav bar's pill shape and colour, 
+   creating a consistent visual language across the interactive elements. */
 
 .controls-bar {
   display: flex;
