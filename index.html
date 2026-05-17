@@ -1,3 +1,28 @@
+<!-- For this assignment, the context I chose to revamp my site around was Music for Relaxation. Using the partially 
+ developed website with a media player developed from Rohit, I used HTML, CSS, and JS to build on and create a visual 
+ design and functional player that coencides with my chosen context. The resources I used to aid in developing this 
+ Code were the Class PPT slides, Mozilla's Reference Site, W3Schools, and then also a 'Cheat Sheet'created by 
+ Claude AI (created from the class slides). In addition, I also used Claude AI to aid when I encountered errors I 
+ couldn't solve or code I didn't understand. (strictly a guide/teacher only - all code was written by myself/Rohit) Further
+ references are listed below.
+ 
+ Player Icons by Icons8
+
+ Sound Tracks:
+ Forest Track by Paweł Spychała from Pixabay
+ Rain Track by DRAGON-STUDIO from Pixabay
+ Night Track by freesound_community from Pixabay 
+ Ocean Track by Monika Supernak from Pixabay  
+
+ Cover Images from Adobe Stock, free from Education License:
+‘Glass Rain Drops’ by alexkich
+‘Milky way starry night sky in the field and Perseid meteor shower before sunrise’ by noon@photo
+‘The ocean under the blue sky and the sunset in the evening’ by Weiming
+‘Beautiful sea waves with foam of blue and turquoise in bali,Indonesia’ by chanchai
+
+ -->
+
+
 <!DOCTYPE html>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
@@ -19,16 +44,26 @@
 		<!-- Main Content Section-->
 		<main class="container">
 		<!-- Media Player Section -->
+			<!-- I left the audio src empty here because I when the page loads it shows plain player without a theme selected, and putting in
+			 an audio file here would enable users to play a track on this page without selecting a theme, which I didnt want. If I deleted this
+			 line of code it would prevent the whole function from working, hence the reason I left it empty. -->
 			<audio id="custom-audio-player">
-				<source src="" type="audio/mp3">
+				<source src="" type="audio/mp3"> 
 			</audio>
 
+			<!-- I chose the two column layout as I felt it made the player feel more aesthetically cohesive. I initially had the nav bar on the
+			 top but it felt too spaced out and that shrinking the other elements would just create a poor visual composition, hence the two div'
+			 for each side of the main container section.  -->
 			<div class="media-player">
 				<div class="player-left">
 					<img src="Image5.png" alt="Select Theme" class="album-cover">
 					<p class="album-caption">No Theme Selected</p>
 				</div>
 				<div class="player-right">
+					<!-- I thought instead of using traditional navigation links like Rohit did, I replaced the nav with 
+    					 buttons because the purpose of this nav is to swtich themes rather than navigate to different pages. 
+						 I would say buttons are semantically more appropriate for triggering a JavaScript function, and they also gave me 
+						 more styling flexibility to achieve the pill-shaped mood selector look I was going for. --> 
 						<nav>
 							<button class="theme-btn" id="theme-forest">Forest</button>
 							<button class="theme-btn" id="theme-Ocean">Ocean</button>

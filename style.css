@@ -1,3 +1,5 @@
+/*  */
+
 :root {
   --primary-bg-color: #7a9e8e;
   --text-color: #2d2d2d;
@@ -19,7 +21,6 @@ body {
   justify-content: space-between;
   transition: background-color 0.8s ease;
 }
-
 
 /* Container for the main content */
 .container {
@@ -165,7 +166,6 @@ nav {
     filter: brightness(1.1);
     transition: filter 0.2s ease;
 }
-
 
 .progress-bar {
   width: 80%;
